@@ -1,0 +1,54 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
+#include <string.h>
+#include <ctype.h>
+#include <time.h>
+
+//=====================================================================
+//CONSTANTES
+
+
+//=====================================================================
+//PROTOTIPOS E FUNÇOES
+
+//=====================================================================
+//===========================CODIGO PRINCIPAL==========================
+//CABEÇALHO
+/*  - Elabore um algoritmo que leia (receba) um número inteiro positivo (desprezar qualquer tipo de
+verificação/validação).
+Calcule e mostre no vídeo a tabuada de multiplicação de 1 a 10 deste número com o respectivo resultado.
+
+
+*/
+//=====================================================================
+int main()
+{
+    //CRIAR AS VARIAVEIS
+    int num;
+    //INICIALIZAR AS VARIAVEIS
+    num=0;
+
+    //RECEBER NUMERO
+    printf("\nDIGITE O NUMERO: ");
+    fflush(stdin);
+    scanf("%d",&num);
+
+    printf("\n%d",num*1);
+    printf("\n%d",num*2);
+    printf("\n%d",num*3);
+    printf("\n%d",num*4);
+    printf("\n%d",num*5);
+    printf("\n%d",num*6);
+    printf("\n%d",num*7);
+    printf("\n%d",num*8);
+    printf("\n%d",num*9);
+    printf("\n%d",num*10);
+
+
+
+
+    printf("\n\n\nMUITO OBRIGADO POR UTILIZAR O PROGRAMA DO GRANDE MAROMBEIRO ESDRAS SANTOS");
+
+    return 0;
+}

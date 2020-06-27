@@ -1,0 +1,53 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
+#include <string.h>
+#include <ctype.h>
+#include <time.h>
+
+//=====================================================================
+//CONSTANTES
+
+
+//=====================================================================
+//PROTOTIPOS E FUNÇOES
+
+//=====================================================================
+//===========================CODIGO PRINCIPAL==========================
+//CABEÇALHO
+/*  -g - Elabore um algoritmo que receba um valor real, processe e mostre:
+a) O valor inicial;
+b) o valor do juros referente a 12% ao mês (considerar mês de 30 dias);
+c) o valor total reajustado em 12%.
+
+
+*/
+//=====================================================================
+int main()
+{
+    //CRIAR AS VARIAVEIS
+    float capital;
+    float juros=0;
+    int meses=0;
+
+    //INICIALIZAR AS VARIAVEIS
+    capital=0;
+
+
+    //RECEBER CAPITAL
+    printf("\nDIGITE O CAPITAL APLICADO: ");
+    fflush(stdin);
+    scanf("%f",&capital);
+    //TEMPO
+    printf("\nDIGITE A QUANTIDADE DE MESES APLICADO: ");
+    fflush(stdin);
+    scanf("%d",&meses);
+    juros=capital*(12.00/100.00)*meses;
+    printf("\nCAPITAL %.2f,MESES APLICADO %d,JUROS APLICADO %.2f,TOTAL REAJUSTADO %.2f",capital,meses,juros,capital+juros);
+
+
+
+    printf("\n\n\nMUITO OBRIGADO POR UTILIZAR O PROGRAMA DO GRANDE MAROMBEIRO ESDRAS SANTOS");
+
+    return 0;
+}

@@ -1,0 +1,115 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
+#include <string.h>
+#include <ctype.h>
+#include <time.h>
+
+//=====================================================================
+//CONSTANTES
+
+
+//=====================================================================
+//PROTOTIPOS E FUNÇOES
+
+//=====================================================================
+//===========================CODIGO PRINCIPAL==========================
+//CABEÇALHO
+/*Elabore um algoritmo que solicite ao operador as seguintes informações de uma pessoa: nome,
+idade, sexo, altura, profissão, rua, bairro, cidade, sigla do estado, CEP.
+Mostre no vídeo todos os dados em forma de texto conforme o exemplo abaixo:
+ ==========================================
+ Fulano da Silva, Voce tem 20 anos, sexo masculino
+ com altura de 1.85 mts
+ Sua profissão eh Gerente
+ Mora na Rua: da Saudade, 955
+ Bairro Santa Marta
+ CEP: 38.100-000 - Uberaba (MG)
+ ==========================================
+*/
+//=====================================================================
+int main()
+{
+    //CRIAR AS VARIAVEIS
+    //NA CRIAÇÃO VC COLOCA
+    //tipodavariavel nome;
+    //PARA CARACTER VOCE PRECISA COLOCAR QUAL E O TAMANHO DO VETOR DE CARACTER(QUANTAS LETRAS,NUMEROS)
+    char nome[40];
+    int idade=0;
+    char sex;
+    float altura=0;
+    char prof[40];
+    char rua[40];
+    char bairro[40];char cidade[40];char sigla[3];char cep[40];
+
+    //RECEBER NOME
+    printf("\nDIGITE SEU NOME COMPLETO: ");//A FUNÇÃO PRINTF E UMA FUNÇÃO DE SAIDA
+    //O \n SERVE PRA PULAR UMA LINHA
+    fflush(stdin);//ESSA FUNÇÃO LIMPA O BUFFER DE ENTRADA,RETIRANDO TODO LIXO DE MEMORIA
+    //RECOMENDO UTILIZAR TODA VEZ QUE FOR RECEBER ALGO PRA SER DE COSTUME
+    gets(nome);//FUNÇÃO DE ENTRADA DE UMA "CADEIA" DE STRING
+    //A FUNÇÃO scanf("%c",&variavel)SO RECEBE UM UNICO CARACTER
+    //A FUNCAO scanf("%s",&variavel)SO RECEBE UMA PALAVRA(string)
+
+    //IDADE
+    printf("\nDIGITE SUA IDADE: ");
+    fflush(stdin);
+    scanf("%d",&idade);//FUNÇÃO DE ENTRADA O %d E PARA NUMEROS INTEIROS,E O & APONTA PARA O ENDEREÇO DA VARIAVEL
+
+    //SEXO
+    printf("\nDIGITE SEU SEXO: ");
+    fflush(stdin);
+    scanf("%c",&sex);//%c UNICO CARACTER
+
+    //ALTURA
+    printf("\nDIGITE SUA ALTURA: ");
+    fflush(stdin);
+    scanf("%f",&altura);//%f PARA VALORES DO TIPO REAL
+
+    //PROFISSÃO
+    printf("\nDIGITE SUA PROFISSAO: ");
+    fflush(stdin);
+    gets(prof);
+
+    //RUA
+    printf("\nDIGITE SUA RUA: ");
+    fflush(stdin);
+    gets(rua);
+
+    //BAIRRO
+    printf("\nDIGITE SEU BAIRRO: ");
+    fflush(stdin);
+    gets(bairro);
+
+    //CIDADE
+    printf("\nDIGITE SUA CIDADE: ");
+    fflush(stdin);
+    gets(cidade);
+
+    //SIGLA DE ESTADO
+    printf("\nDIGITE A SIGLA DO SEU ESTADO: ");
+    fflush(stdin);
+    gets(sigla);
+
+    //CEP
+    printf("\nDIGITE SEU CEP: ");
+    fflush(stdin);
+    gets(cep);
+
+
+    printf("\n\n=======================================================");
+    printf("\n%s,VOCE TEM %d ANOS,SEXO %c",nome,idade,sex);//TEM QUE SER NA ORDEM,E DA MESMA FORMA %(tipo)
+    printf("\nCOM ALTURA DE %.2f METROS",altura); //%.2f PARA SO DUAS CASAS DEPOIS DA VIRGULA
+    printf("\nSUA PROFISSAO E %s",prof);
+    printf("\nMORA NA RUA:%s",rua);
+    printf("\nBAIRRO:%s",bairro);
+    printf("\nCEP:%s-%s-%s",cep,cidade,sigla);
+    printf("\n=======================================================");
+
+
+
+    printf("\n\n\nMUITO OBRIGADO POR UTILIZAR O PROGRAMA DO GRANDE MAROMBEIRO ESDRAS SANTOS");
+
+
+    return 0;
+}

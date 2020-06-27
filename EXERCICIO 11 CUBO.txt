@@ -1,0 +1,47 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
+#include <string.h>
+#include <ctype.h>
+#include <time.h>
+
+//=====================================================================
+//CONSTANTES
+
+
+//=====================================================================
+//PROTOTIPOS E FUNÇOES
+
+//=====================================================================
+//===========================CODIGO PRINCIPAL==========================
+//CABEÇALHO
+/*  Elaborar um algoritmo que receba um número inteiro via teclado, Verificar se ele
+é maior que zero e mostrar o cálculo e o resultado do cubo desse número, caso
+contrário dê uma mensagem de número invalido.
+
+*/
+//=====================================================================
+int main()
+{
+    //CRIAR AS VARIAVEIS
+    int num;
+
+    //INICIALIZAR VARIAVEIS
+    num=0;
+
+    //RECEBER NUMERO
+    printf("\nDIGITE O NUMERO: ");
+    fflush(stdin);
+    scanf("%d",&num);
+    if(num<0)
+    {
+        printf("\nNUMERO INVALIDO MENOR QUE 0");
+    }
+    else
+    {
+        printf("\nO CUBO DE %d E %d",num,num*num*num);
+    }
+    printf("\n\n\nMUITO OBRIGADO POR UTILIZAR O PROGRAMA DO GRANDE MAROMBEIRO ESDRAS SANTOS");
+
+    return 0;
+}

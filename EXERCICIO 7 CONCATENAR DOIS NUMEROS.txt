@@ -1,0 +1,56 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
+#include <string.h>
+#include <ctype.h>
+#include <time.h>
+
+//=====================================================================
+//CONSTANTES
+
+
+//=====================================================================
+//PROTOTIPOS E FUNÇOES
+
+//=====================================================================
+//===========================CODIGO PRINCIPAL==========================
+//CABEÇALHO
+/*  -Elabore um algoritmo que receba o nome de duas pessoas e mostre no vídeo a união
+(concatenação) destes dois nomes.
+Ex.: nome1  MARIA
+ nome2  JOÃO
+resultado (mostrar) : MARIA e JOÃO
+
+
+*/
+//=====================================================================
+int main()
+{
+    //CRIAR AS VARIAVEIS
+    char nome1[40];
+    char nome2[40];
+
+    //INICIALIZAR AS VARIAVEIS
+    strcpy(nome1,"");
+    strcpy(nome2,"");
+
+    //RECEBER NOMES
+    printf("\nDIGITE O PRIMEIRO NOME: ");
+    fflush(stdin);
+    gets(nome1);
+    printf("\nDIGITE O SEGUNDO NOME: ");
+    fflush(stdin);
+    gets(nome2);
+
+
+    strcat(nome1,nome2);//REALIZA A CONCATENAÇÃO
+    printf("\n%s",nome1);
+
+
+
+
+
+    printf("\n\n\nMUITO OBRIGADO POR UTILIZAR O PROGRAMA DO GRANDE MAROMBEIRO ESDRAS SANTOS");
+
+    return 0;
+}

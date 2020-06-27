@@ -1,0 +1,47 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
+#include <string.h>
+#include <ctype.h>
+#include <time.h>
+
+//=====================================================================
+//CONSTANTES
+
+
+//=====================================================================
+//PROTOTIPOS E FUNÇOES
+
+//=====================================================================
+//===========================CODIGO PRINCIPAL==========================
+//CABEÇALHO
+/*  -  Elabore um algoritmo que leia (receba) um valor correspondente a graus Farenheit. Calcule e
+apresente a conversão deste valor para graus Celsius.
+Utilize a fórmula:
+C = 5 / 9 * (F - 32)
+Onde: C representa o grau Celsius e F representa grau Farenheit.
+
+
+*/
+//=====================================================================
+int main()
+{
+    //CRIAR AS VARIAVEIS
+    float fahr;
+    float celsius;
+    //INICIALIZAR AS VARS
+    fahr=0;
+    celsius=0;
+
+    printf("\nDIGITE O VALOR EM FARENHEIT: ");
+    fflush(stdin);
+    scanf("%f",&fahr);
+
+    //CALCULO
+    celsius=(5.0*(fahr-32))/9.0;
+    printf("\nEQUIVALE A %.2f CELSIUS",celsius);
+    printf("\n\n\nMUITO OBRIGADO POR UTILIZAR O PROGRAMA DO GRANDE MAROMBEIRO ESDRAS SANTOS");
+
+
+    return 0;
+}
